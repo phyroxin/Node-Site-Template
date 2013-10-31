@@ -1,0 +1,18 @@
+extend layout
+block content
+	h1= title
+	
+	form#formAddUser(name="adduser",method="post",action="/adduser")
+		input#inputUserName(type="text",placeholder="username",name="username")
+		input#inputUserEmail(type="text",placeholder="email",name="useremail")
+		button#btnSubmit.sbtbtn(type="submit") submit
+	
+block sidebar
+	.widget
+		h1 Widget
+		p
+			| Sed auctor neque eu tellus rhoncus ut
+			| eleifend nibh porttitor. Ut in nulla enim.
+		p
+			| Stuff about the about page
+			| vehicula.
